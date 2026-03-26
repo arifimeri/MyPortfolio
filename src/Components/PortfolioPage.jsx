@@ -9,6 +9,7 @@ import { faHtml5, faCss3, faJs, faReact, faJava, faDocker, faWordpress, faGitAlt
   faGitlab, faSquareGithub, faSquareLinkedin, faSquareInstagram, faSquareFacebook} 
 from '@fortawesome/free-brands-svg-icons'; 
 import { faDatabase } from '@fortawesome/free-solid-svg-icons';
+import ContactForm from './ContactForm';
 
 const PortfolioPage = () => {
 
@@ -149,6 +150,7 @@ const PortfolioPage = () => {
           I'm always interested in new projects, collaborations, and learning opportunities.
           If you'd like to work together or discuss an idea, feel free to send me a message or connect with me on the platforms below.
         </p>
+        <ContactForm/>
         <div className="contact-links">
          <a href="https://www.linkedin.com/in/arif-imeri-729824345/" target="_blank" rel="noopener noreferrer"> <FontAwesomeIcon icon={faSquareLinkedin} className='contactPlatforms'/></a>
          <a href="https://github.com/arifimeri"   target="_blank" rel="noopener noreferrer"> <FontAwesomeIcon icon={faSquareGithub} className='contactPlatforms'/></a>
