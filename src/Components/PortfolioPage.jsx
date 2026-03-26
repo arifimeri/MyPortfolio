@@ -30,6 +30,8 @@ const PortfolioPage = () => {
   };
 
   useEffect(() => {
+    document.title = "Arif Imeri | Software Developer";
+
     window.addEventListener('scroll', toggleVisibility);
     return () => window.removeEventListener('scroll', toggleVisibility);
   }, []);
