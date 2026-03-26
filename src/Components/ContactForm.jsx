@@ -7,13 +7,13 @@ const ContactForm = () => {
   // 2. Function to send the email
   const sendEmail = (values, actions) => {
     emailjs.send(
-      'service_di73zof',   // Replace with your Service ID
-      'template_0hroi08',  // Replace with your Template ID
+      'service_di73zof',   // ID
+      'template_0hroi08',  //  Template ID
       {
         from_email: values.email,
         message: values.message,
       },
-      'XbGmwnc27Ed4kZWAN'    // Replace with your Public Key
+      'XbGmwnc27Ed4kZWAN'    // Public Key
     )
     .then((response) => {
       console.log('SUCCESS!', response.status, response.text);
