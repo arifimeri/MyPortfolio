@@ -97,6 +97,14 @@
   width: 100%;
 }
 
+/* --- Desktop: Hide Burger Icon --- */
+.menu-icon {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  z-index: 1001; /* Stay above the menu overlay */
+}
+
 .greetingParagraph{
   margin-top: 10px;
 }
@@ -342,6 +350,34 @@
 
   .nav-links a{
     font-size: 14px;
+  }
+
+  .menu-icon {
+    display: block; /* Show burger icon */
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%; /* Hide off-screen by default */
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bg-color);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s ease-in-out;
+    z-index: 1000;
+    gap: 40px;
+  }
+
+  /* When burger is clicked, slide in */
+  .nav-links.active {
+    right: 0;
+  }
+
+  .nav-links a {
+    font-size: 24px !important; /* Larger text for mobile taps */
   }
 }
 

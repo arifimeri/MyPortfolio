@@ -8,10 +8,21 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHtml5, faCss3, faJs, faReact, faJava, faDocker, faWordpress, faGitAlt, faGithub , 
   faGitlab, faSquareGithub, faSquareLinkedin, faSquareInstagram, faSquareFacebook} 
 from '@fortawesome/free-brands-svg-icons'; 
+import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { faDatabase } from '@fortawesome/free-solid-svg-icons';
 import ContactForm from './ContactForm';
 
 const PortfolioPage = () => {
+
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+  setIsMenuOpen(!isMenuOpen);
+};
+
+const closeMenu = () => {
+  setIsMenuOpen(false);
+};
 
   const [isVisible, setIsVisible] = useState(false);
   const toggleVisibility = () => {
@@ -39,14 +50,21 @@ const PortfolioPage = () => {
       <div className="glowing-background" />
       
       <header className="nav-header">
-        <div className='logo' style={{ fontWeight: 'bold' }}>ARIF IMERI</div>
-        <nav className="nav-links">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
-        </nav>
-      </header>
+      <div className='logo' style={{ fontWeight: 'bold' }}>ARIF IMERI</div>
+      
+      {/* Burger Icon for Mobile */}
+      <div className="menu-icon" onClick={toggleMenu}>
+        <FontAwesomeIcon icon={isMenuOpen ? faTimes : faBars} />
+      </div>
+
+      {/* Nav Links - Add "active" class when menu is open */}
+      <nav className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
+        <a href="#home" onClick={closeMenu}>Home</a>
+        <a href="#about" onClick={closeMenu}>About</a>
+        <a href="#projects" onClick={closeMenu}>Projects</a>
+        <a href="#contact" onClick={closeMenu}>Contact</a>
+      </nav>
+    </header>
 
       {/* 1. HOME SECTION */}
       <section id="home" className="section-container hero-section">
