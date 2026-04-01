@@ -163,11 +163,11 @@ const closeMenu = () => {
 
       {/* 4. CONTACT SECTION */}
       <section id="contact" className="section-container contact-section">
-        <div className="title-in-contact-section">
-        <h2>Contact</h2>
-        </div>
         <div className="items-in-contact-section">
         <div className="left-side-in-contact">
+          <div className="title-in-contact-section">
+        <h2>Contact Me</h2>
+        </div>
         <p className='paragraph-in-contact-section-left-side'>
           Open to new opportunities and collaborations.
           Let's build something great together.
