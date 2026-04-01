@@ -1,6 +1,6 @@
 .form-container {
-  max-width: 600px;
-  margin: 40px auto;
+  width: 530px;
+  margin: auto;
   padding: 40px;
   background: var(--card-bg);
   border: 1px solid var(--card-border);
@@ -87,6 +87,7 @@
 /* Responsive adjustment */
 @media (max-width: 600px) {
   .form-container {
+    width: 100%;
     padding: 25px;
     margin: 20px;
   }

@@ -143,11 +143,11 @@ const closeMenu = () => {
 
       {/* 3. LAB SECTION */}
       <section id="projects" className="section-container">
-        <p className="purple-text">Featured Project</p>
-        <h2 style={{ marginBottom: '20px' }}>Drinori PVC</h2>
+        <h2 style={{ marginBottom: '20px' }}>Projects</h2>
         
         <div className="project-card">
           <div className="project-info">
+            <h4>DRINORI PVC</h4>
             <p className='project-desc'>
               Developed a modern and responsive website for Drinori PVC, 
               a company specializing in PVC doors and windows manufacturing.
@@ -163,19 +163,31 @@ const closeMenu = () => {
 
       {/* 4. CONTACT SECTION */}
       <section id="contact" className="section-container contact-section">
+        <div className="title-in-contact-section">
         <h2>Contact</h2>
-        <p style={{ color: 'rgba(255,255,255,0.7)', marginTop: '10px' }}>
-          I'm always interested in new projects, collaborations, and learning opportunities.
-          If you'd like to work together or discuss an idea, feel free to send me a message or connect with me on the platforms below.
+        </div>
+        <div className="items-in-contact-section">
+        <div className="left-side-in-contact">
+        <p className='paragraph-in-contact-section-left-side'>
+          Open to new opportunities and collaborations.
+          Let's build something great together.
         </p>
-        <ContactForm/>
         <div className="contact-links">
          <a href="https://www.linkedin.com/in/arif-imeri-729824345/" target="_blank" rel="noopener noreferrer"> <FontAwesomeIcon icon={faSquareLinkedin} className='contactPlatforms'/></a>
          <a href="https://github.com/arifimeri"   target="_blank" rel="noopener noreferrer"> <FontAwesomeIcon icon={faSquareGithub} className='contactPlatforms'/></a>
          <a href="https://www.instagram.com/ariifimeri/" target="_blank" rel="noopener noreferrer"> <FontAwesomeIcon icon={faSquareInstagram} className='contactPlatforms'/></a>
          <a href="https://www.facebook.com/100000234324123O32743" target="_blank" rel="noopener noreferrer"> <FontAwesomeIcon icon={faSquareFacebook} className='contactPlatforms'/></a>
         </div>
+        </div>
+        <div className="right-side-in-contact">
+        <ContactForm/>
+        </div>
+        </div>
       </section>
+
+      <footer className='copyright-footer'>
+         <p>© 2026 Arif Imeri</p>
+      </footer>
 
       {/* 5. BACK TO TOP BUTTON */}
       {isVisible && (
