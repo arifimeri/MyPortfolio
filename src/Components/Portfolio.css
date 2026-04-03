@@ -440,6 +440,15 @@
    .paragraph-in-contact-section-left-side{
     width: 350px;
   }
+
+   .items-in-contact-section{
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .title-in-contact-section {
+    text-align: start;
+  }
 }
 
 @media (max-width: 600px) {
@@ -470,15 +479,6 @@
     right: 20px;
     width: 40px;
     height: 40px;
-  }
-
-  .items-in-contact-section{
-    flex-direction: column;
-    gap: 30px;
-  }
-
-  .title-in-contact-section {
-    text-align: start;
   }
 
   .copyright-footer {
