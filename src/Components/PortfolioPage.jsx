@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
 import './Portfolio.css';
 import profileImage from "../assets/Arif_image.jpeg";
+import chatImage from "../assets/photoInContactForm.png";
 import firstProject from "../assets/firstProjectInPortfolio.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHtml5, faCss3, faJs, faReact, faJava, faDocker, faWordpress, faGitAlt, faGithub , 
@@ -172,6 +173,7 @@ const closeMenu = () => {
           Open to new opportunities and collaborations.
           Let's build something great together.
         </p>
+        <img className='imageInContactSection' src={chatImage} alt="chat image" />
         <div className="contact-links">
          <a href="https://www.linkedin.com/in/arif-imeri-729824345/" target="_blank" rel="noopener noreferrer"> <FontAwesomeIcon icon={faSquareLinkedin} className='contactPlatforms'/></a>
          <a href="https://github.com/arifimeri"   target="_blank" rel="noopener noreferrer"> <FontAwesomeIcon icon={faSquareGithub} className='contactPlatforms'/></a>
